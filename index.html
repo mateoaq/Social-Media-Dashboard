@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body id="body">
+    <section>
+        <div class="container uno">
+            <div class="container dos">
+                <div class="container tres">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1><strong>Social Media Dashboard</strong></h1>
+                            <p>Total de seguidores: 23.004</p>
+                        </div>
+                        <div class="d-md-none d-sm col-sm-12">
+                            <hr>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-12 toggle">
+                            <p> <strong>Dark Mode </strong> </p>
+                            <label class="switch">
+                                <input id="boton" onclick="cambiar()" type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tres">
+                    <div class="row">
+                        <div name="card" class="card-1 col-md-3 col-sm-12">
+                            <div class="top face"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col user">
+                                        <div class="facebook">
+                                        </div>
+                                        <p class="userName"> <strong>@NombredeUsuario</strong></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="number">
+                                            <strong>1987</strong>
+                                        </p>
+                                        <p class="follow">F O L L O W E R S</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats"><strong>12 Hoy</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-1 col-md-3 col-sm-12">
+                            <div class="top tweet"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col user">
+                                        <div class="tweeter">
+                                        </div>
+                                        <p class="userName"> <strong>@NombredeUsuario</strong></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="number">
+                                            <strong>1044</strong>
+                                        </p>
+                                        <p class="follow">F O L L O W E R S</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col status">
+                                        <p class="ico-UpD-T"></p>
+                                        <p class="stats"><strong>99 Hoy</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-1 col-md-3 col-sm-12">
+                            <div class="top insta"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col user">
+                                        <div class="instagram">
+                                        </div>
+                                        <p class="userName"> <strong>@NombredeUsuario</strong></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="number">
+                                            <strong>11k</strong>
+                                        </p>
+                                        <p class="follow">F O L L O W E R S</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col status">
+                                        <p class="ico-UpD-I"></p>
+                                        <p class="stats"><strong>1099 Hoy</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-1 col-md-3 col-sm-12">
+                            <div class="top you"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col user">
+                                        <div class="youtube">
+                                        </div>
+                                        <p class="userName"> <strong>@NombredeUsuario</strong></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="number">
+                                            <strong>8239</strong>
+                                        </p>
+                                        <p class="follow">F O L L O W E R S</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col status">
+                                        <p class="ico-UpD-Y"></p>
+                                        <p class="stats-r"><strong>44 Hoy</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tres">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2><strong>Vistas - Hoy</strong></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tres">
+                    <div class="row">
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Visitas a la Pagina</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="facebook"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>87</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats"><strong>3%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Likes</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="facebook"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>52</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-Y"></p>
+                                        <p class="stats-r"><strong>2%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Likes</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="instagram"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>5462</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats"><strong>2257%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Visitas a la Pagina</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="instagram"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>52k</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats"><strong>1375%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Retweets</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="tweeter"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>117</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats"><strong>303%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Likes</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="tweeter"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>507</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats"><strong>553%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Likes</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="youtube"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>107</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats-r"><strong>19%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="card" class="card-2 col-md-3 col-sm-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="userName"> <strong>Total de Vistas</strong></p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="youtube"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="number">
+                                            <strong>1407</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 status">
+                                        <p class="ico-UpD-F"></p>
+                                        <p class="stats-r"><strong>12%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="main.js"></script>
+</body>
+</html>
